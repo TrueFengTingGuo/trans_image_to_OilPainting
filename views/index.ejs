@@ -6,14 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <style>
+        img {
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 5px;
+            height: auto;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 70%;
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
 </head>
 
 <body>
-    <header>
-        <h1>image Analyze</h1>
-    </header>
-
-    <!--  SINGLE FILE -->
     <form action="/uploadfile" enctype="multipart/form-data" method="POST">
         <input type="file" name="myFile" accept="image/*" />
         <input type="submit" value="Upload a file" />
