@@ -7,27 +7,22 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <style>
-        img {
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            padding: 5px;
-            height: auto;
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            width: 70%;
-        }
+
     </style>
     <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
 </head>
 
 <body>
-    <form action="/uploadfile" enctype="multipart/form-data" method="POST">
-        <input type="file" name="myFile" accept="image/*" />
-        <input type="submit" value="Upload a file" />
-    </form>
+    <input type="file" id="myFile" accept="image/*">Load image</input>
+    <img id="myImage" style="border:1px" />
 
+    <div class="image-container">
+        <canvas id="Canvas" class="image"></canvas>
+    </div>
+
+    <script src="uploadImage.js"></script>
 </body>
 
 </html>
