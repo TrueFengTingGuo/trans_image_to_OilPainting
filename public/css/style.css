@@ -2,9 +2,29 @@ img {
             border: 1px solid #ddd;
             border-radius: 4px;
             padding: 5px;
-            height: auto;
+            height: 50%;
+            width: 50%;
             display: block;
             margin-left: auto;
             margin-right: auto;
-            width: 70%;
+            
+}
+
+canvas{
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: scroll;
+}
+
+.image-container{
+    padding: 5px;
+    height: 720px;
+    width: 80%;
+    overflow: scroll;
+    margin-left: auto;
+    margin-right: auto;
 }
